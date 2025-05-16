@@ -1,0 +1,11 @@
+torch
+numpy
+pandas
+scikit-learn
+imbalanced-learn
+datasets
+transformers
+matplotlib
+seaborn
+fasttext
+gensim
