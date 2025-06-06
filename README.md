@@ -8,7 +8,7 @@ The goal of the project was to develop a system capable of analyzing resumes and
 - Automatic data collection from the hh.ru platform
 - Preprocessing and normalization of text and numeric features
 - Manual annotation of part of the dataset
-- Classification using traditional models (Random Forest, Logistic Regression)
+- Classification using traditional models (Random Forest)
 - Semi-supervised learning via self-training
 - Resume clustering for deeper candidate segmentation
 
@@ -22,6 +22,8 @@ Both numerical and textual features were used. Texts were embedded using TF-IDF,
 - `resumes_all.csv` — raw parsed resume data
 - `resumes_features-6.csv` — **final processed dataset** (available in [Releases](https://github.com/Veta92/VKR_2025/releases))
 - `requirements.txt` — environment setup
+- `scraping_hh.ipynb` - data csraping
+- `data_prep.ipynb` - dataset preparation
 
 ## 📈 Dataset
 
@@ -34,9 +36,7 @@ The cleaned and final dataset used in training and evaluation is available in th
 
 ## 📊 Models
 
-- Classifiers: Logistic Regression, Random Forest, BalancedRandomForestClassifier
-- Semi-supervised learning: Self-training on unlabeled data
-- Clustering: KMeans, DBSCAN
+- Classifier: Random Forest
 - Evaluation: macro F1-score, confusion matrices, weighted metrics
 
 ## 🤖 Text Embedding
